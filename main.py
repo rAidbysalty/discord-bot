@@ -542,11 +542,7 @@ if __name__ == "__main__":
     print("=" * 50)
     
     # Token must be provided via environment variable for safety
-    token = os.getenv("DISCORD_BOT_TOKEN")
-    if not token:
-        print("❌ No DISCORD_BOT_TOKEN found in environment.")
-        print("Set the DISCORD_BOT_TOKEN environment variable and re-run.")
-        print("Example in PowerShell: $env:DISCORD_BOT_TOKEN=\"your_token_here\"")
+    token = os.getenv("BOT_TOKEN_HERE")
     else:
         print(f"✅ Token found ({len(token)} characters)")
         response = input("\nDo you want to continue? (yes/no): ")
