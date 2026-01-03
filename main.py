@@ -543,7 +543,6 @@ if __name__ == "__main__":
     
     # Token must be provided via environment variable for safety
     token = os.getenv("BOT_TOKEN_HERE")
-    else:
         print(f"✅ Token found ({len(token)} characters)")
         response = input("\nDo you want to continue? (yes/no): ")
         if response.lower() in ["yes", "y"]:
